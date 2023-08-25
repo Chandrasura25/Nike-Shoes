@@ -6,10 +6,16 @@ const PopularProductCard = ({ imgURL, name, price }) => {
       <img src={imgURL} alt={name} className="w-[280px] h-[280px]" />
       <div className="flex gap-2.5 justify-start mt-8">
         <img src={star} alt="rating" width={24} height={24} />
-        <p className="font-montserrat text-slate-gray text-xl leading-normal">(4.5)</p>
+        <p className="font-montserrat text-slate-gray text-xl leading-normal">
+          (4.5)
+        </p>
       </div>
-      <h3 className="">{name}</h3>
-        <p className="font-palanquin font-bold text-lg">{price}</p>
+      <h3 className="mt-2 text-2xl leading-normal font-semibold font-palanquin">
+        {name}
+      </h3>
+      <p className="font-montserrat mt-2 font-semibold text-2xl leading-normal text-coral-red">
+        {price}
+      </p>
     </div>
   );
 };
