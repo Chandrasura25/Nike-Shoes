@@ -4,16 +4,15 @@ const SuperQuality = () => {
   return (
     <section id="about-us" className="flex justify-between items-center max-lg:flex-col gap-10 w-full max-container">
       <div className="flex flex-1 flex-col">
-        <h2 className="font-palanquin text-8xl max-sm:text-[72px] font-bold max-sm:leading-[82]">
-          <span className="xl:bg-white xl:whitespace-nowrap relative z-10 pr-10">
-            The New Arrival
-          </span>
-          <br />
-          <span className="text-coral-red inline-block mt-3">Nike</span> Shoes
+        <h2 className="font-palanquin capitalize text-4xl font-bol lg:max-w-lg">
+           We Provide You 
+          <span className="text-coral-red"> Super Quality</span> Shoes
         </h2>
-        <p className="font-montserrat text-slate-gray text-lg leading-8 mt-6 mb-14 sm:max-w-sm">
-          Discover stylish Nike arrivals, quality comfort, and innovation for
-          your active life.
+        <p className="info-text mt-4 lg:max-w-lg">
+          Ensuring premium comfort and style, our meticulously crafted footwear is designed to elevate your lifestyle, providing you with unmatched quality, innovation, and a touch of elegance.
+        </p>
+        <p className="mt-6 lg:max-w-lg info-text">
+          Our dedication to detail and excellence ensures your satisfaction.
         </p>
         <Button label="View Details" />
       </div>
