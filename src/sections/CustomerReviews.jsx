@@ -12,7 +12,13 @@ const CustomerReviews = () => {
       </p>
       <div className="flex flex-1 mt-24 justify-evenly items-center max-lg:flex-col gap-14">
         {reviews.map((review) => (
-          <ReviewCard key={review.id} review={review} />
+          <ReviewCard
+            key={review.customerName}
+            imgURL={review.imgURL}
+            customerName={review.customerName}
+            rating={review.rating}
+            feedback={review.feedback}
+          />
         ))}
       </div>
     </section>
