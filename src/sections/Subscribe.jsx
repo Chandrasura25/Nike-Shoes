@@ -10,10 +10,10 @@ const Subscribe = () => {
         Sign Up for
         <span className="text-coral-red"> Updates</span> & Newsletter
       </h3>
-      <div className="">
+      <div className="lg:max-w-[40%] w-full flex items-center max-sm:flex-col">
         <input type="text" placeholder="subscribe@nike.com" className="input" />
-        <div className="">
-          <Button label="Sign Up" fullWidth/>
+        <div className="flex max-sm:justify-end items-center max-sm:w-full">
+          <Button label="Sign Up" fullWidth />
         </div>
       </div>
     </section>
