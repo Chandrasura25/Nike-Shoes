@@ -1,3 +1,5 @@
+import ReviewCard from "../components/ReviewCard";
+import { reviews } from "../constants";
 const CustomerReviews = () => {
   return (
     <section className="max-container">
@@ -8,6 +10,11 @@ const CustomerReviews = () => {
         Hear genuine stories from our satisfied customers about their
         exceptional experiences with us.
       </p>
+      <div className="flex flex-1 mt-24 justify-evenly items-center max-lg:flex-col gap-14">
+        {reviews.map((review) => (
+          <ReviewCard key={review.id} review={review} />
+        ))}
+      </div>
     </section>
   );
 };
