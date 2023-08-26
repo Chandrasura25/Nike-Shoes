@@ -13,7 +13,7 @@ const Subscribe = () => {
       <div className="">
         <input type="text" placeholder="subscribe@nike.com" className="input" />
         <div className="">
-          <Button label="Sign Up"/>
+          <Button label="Sign Up" fullWidth/>
         </div>
       </div>
     </section>
