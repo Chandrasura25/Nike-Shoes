@@ -1,6 +1,16 @@
+import { footerLogo } from "../assets/images"
+
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <footer className="max-container">
+      <div className="flex justify-between items-start gap-20 flex-wrap max-lg:flex-col">
+        <div className="flex flex-col items-start">
+          <a href="/" className="">
+            <img src={footerLogo} alt="logo" width={150} height={46} className="object-contain" />
+          </a>
+        </div>
+      </div>
+    </footer>
   )
 }
 
