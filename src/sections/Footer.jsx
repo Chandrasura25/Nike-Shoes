@@ -60,7 +60,11 @@ const Footer = () => {
             width={20}
             className="rounded-full object-contain m-0"
           />
+          <p className="text-base leading-normal">
+            2023 Copyright. All Rights Reserved
+          </p>
         </div>
+        <p className="font-montserrat cursor-pointer">Terms & Conditions</p>
       </div>
     </footer>
   );
