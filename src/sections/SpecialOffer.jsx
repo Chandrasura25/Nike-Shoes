@@ -1,5 +1,6 @@
 import { offer } from "../assets/images";
 import Button from "../components/Button";
+import { arrowRight } from "../assets/icons";
 const SpecialOffer = () => {
   return (
     <section className="flex items-center max-xl:flex-col-reverse gap-10 max-container justify-wrap">
@@ -13,20 +14,27 @@ const SpecialOffer = () => {
         />
       </div>
       <div className="flex flex-1 flex-col">
-        <h2 className="font-palanquin capitalize text-4xl font-bol lg:max-w-lg">
-          We Provide You
-          <span className="text-coral-red"> Super Quality</span> Shoes
+        <h2 className="font-palanquin capitalize text-4xl font-bold lg:max-w-lg">
+          <span className="text-coral-red"> Special</span> Offers
         </h2>
         <p className="info-text mt-4 lg:max-w-lg">
-          Ensuring premium comfort and style, our meticulously crafted footwear
-          is designed to elevate your lifestyle, providing you with unmatched
-          quality, innovation, and a touch of elegance.
+          Embark on a shopping journey that redefines your experience with
+          unbeatable deals. From premier selections to incredible savings, we
+          offer unparalleled value that sets us apart.
         </p>
         <p className="mt-6 lg:max-w-lg info-text">
-          Our dedication to detail and excellence ensures your satisfaction.
+          Navigate a realm of possibilities designed to fulfill your unique
+          desires, surpasing your loftiest expectations. Your journey with us is
+          nothing short of extraordinary.
         </p>
-        <div className="mt-11">
-          <Button label="View Details" />
+        <div className="mt-11 flex flex-wrap gap-4">
+          <Button label="Shop now" iconURL={arrowRight} />
+          <Button
+            label="Learn more"
+            backgroundColor="bg-white"
+            borderColor="border-slate-gray"
+            textColor="text-slate-gray"
+          />
         </div>
       </div>
     </section>
